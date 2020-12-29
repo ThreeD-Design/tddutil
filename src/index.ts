@@ -1,3 +1,5 @@
+import chunk from "./Array/chunk"
+
 import StorageUtil from '../node_modules/storage-util/dist/storage-util.es';
 // @ts-ignore
 import { version } from '../package.json';
@@ -378,5 +380,6 @@ let tddutils = {
 		}
 	},
 	version,
+	chunk,
 }
 export default tddutils;
