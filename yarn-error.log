@@ -1,0 +1,74 @@
+Arguments: 
+  D:\SoftWare\Node\node.exe D:\SoftWare\Node\node_global\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  D:\SoftWare\Git\mingw64\bin;D:\SoftWare\Git\usr\bin;C:\Users\Administrator\bin;D:\SoftWare\Ruby27-x64\bin;D:\SoftWare\java\jdk1.8.0_152\bin;D:\SoftWare\java\jdk1.8.0_152\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\SoftWare\Git\cmd;D:\SoftWare\Node;D:\SoftWare\Maven\apache-maven-3.6.3\bin;D:\SoftWare\Maven\apache-maven-3.6.3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\SoftWare\Node\node_global;D:\SoftWare\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.9.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.25.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1056:14)
+
+npm manifest: 
+  {
+    "name": "tddutil",
+    "version": "1.1.9",
+    "description": "一个小巧而实用的js工具库",
+    "main": "dist/tddutil.min.js",
+    "scripts": {
+      "dev": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.config.js --mode development",
+      "build": "cross-env rollup -c",
+      "wpbuild": "cross-env NODE_ENV=production webpack --config config/webpack.config.js --mode production",
+      "start": "npm run wpbuild && npm run build",
+      "test": "cross-env jest ./test"
+    },
+    "keywords": [
+      "javascript",
+      "utils"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/weijhfly/tddutil"
+    },
+    "author": "weijhfly",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.6.4",
+      "@babel/preset-env": "^7.6.3",
+      "cross-env": "^5.2.0",
+      "cross-spawn": "^7.0.3",
+      "html-webpack-plugin": "^3.2.0",
+      "jest": "^24.9.0",
+      "rollup": "^1.24.0",
+      "rollup-plugin-banner": "^0.2.1",
+      "rollup-plugin-commonjs": "^10.1.0",
+      "rollup-plugin-json": "^4.0.0",
+      "rollup-plugin-node-resolve": "^5.2.0",
+      "rollup-plugin-typescript": "^1.0.1",
+      "rollup-plugin-uglify": "^6.0.3",
+      "ts-loader": "^6.2.0",
+      "tslib": "^1.10.0",
+      "typescript": "^3.6.4",
+      "webpack": "^4.16.2",
+      "webpack-cli": "^3.1.0",
+      "webpack-dev-server": "^3.1.5",
+      "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+      "storage-util": "^1.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
